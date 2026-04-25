@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>POS System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div class="login" id="loginBox">
+  <h2>Welcome Back 👋</h2>
+  <input id="username" placeholder="Username">
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="login()">Get Started</button>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard" style="display:none;">
+
+  <div class="top-bar">
+    <h1>🍽 Menu</h1>
+    <button onclick="toggleAddMenu()">+ Add Menu</button>
+  </div>
+
+  <!-- ADD MENU FORM -->
+  <div id="addMenuForm">
+    <input id="pname" placeholder="Name">
+    <input id="pprice" placeholder="Price">
+    <input id="pqty" placeholder="Stock">
+    <button onclick="addProduct()">Save</button>
+  </div>
+
+  <div id="products" class="grid"></div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
